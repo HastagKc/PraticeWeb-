@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning flexBox in Css</title>
+    <style>
+        
+        .containner
+        {
+            /* flex property should be use in the main or parent container  */
+            border: 2px black solid;
+            display: flex;
+            justify-content: space-between;
+        }
+        .items 
+        {
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+            margin: 10px 20px;
+            padding: 10px;
+         
+        }
+        .item1
+        {
+            background-color: red;
+        }
+          .item2
+        {
+            background-color:blue;
+        }
+          .item3
+        {
+            background-color:greenyellow;
+        }
+          .item4
+        {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="containner">
+        <div class="items item1">first</div>
+        <div class="items item2">Second</div>
+        <div class="items item3">Third</div>
+        <div class="items item4">Fourth</div>
+    </div>
+</body>
+</html>
