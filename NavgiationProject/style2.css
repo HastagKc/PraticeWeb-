@@ -17,6 +17,7 @@
     height: 60px;
     margin: 0px;
     color: #fff;
+    /* flexbox in css  */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,11 +40,13 @@
    
 }
 .nav ul li a{
+    padding: 10px 0px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
 
+/* learning about after and before in css */
 .nav ul li::after 
 {
     content: '';
@@ -61,5 +64,17 @@
    
 }
 .nav ul li a:hover{
- color: red;
+ color:#009688;
 }
+
+/* active link */
+/* .active
+{
+    background-color: red;
+} */
+
+a:active
+{
+    background-color: green;
+}
+
