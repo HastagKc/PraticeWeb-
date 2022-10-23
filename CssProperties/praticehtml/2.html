@@ -1,3 +1,4 @@
+<!-- Praticing css measurement units vh vw px -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,8 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .fixedbox {
+        /* fixed units 
+       */
+        /* px is the fixed units in the css */
+        width: 400px;
+        height: 400px;
+      }
+
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        /* percentage is relative as per the size of the parent  */
+        width: 50%;
+        background-color: blue;
+      }
+
+      .box3 {
+        /* em units is used for the font size as per the parent  */
+        font-size: 10px;
+      }
+      .subbox1 {
+        /* the parent of the subbox1 is box3 so it font size is 3 multiple by parent font  */
+        font-size: 3em;
+      }
+
+      /* root tag  */
+      html {
+        font-size: 20px;
+      }
+      box4 {
+        /* rem doesnt take relative font as parent or as em doesnt, 
+        it take font as per root i.e. html tag or brower default font  size
+         */
+        font-size: 20px;
+      }
+      .remBox {
+        font-size: 2rem;
+      }
+
+      .box5 {
+        /* 
+        vw and vh takes size as per the viewport size of the device but percentage take 
+        size as per the parent 
+         */
+        background-color: green;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
-    <p>This is another pratice html Page</p>
+    <div class="fixedbox box1"></div>
+    <div class="fixedbox box2"></div>
+    <div class="fixedbox box3">
+      <div class="subbox1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+        aspernatur. Atque ea reiciendis autem alias quos neque, sed rerum. Ipsa.
+      </div>
+    </div>
+    <div class="fixedbox box4">
+      <div class="remBox">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+          temporibus eos quis sed libero animi, velit pariatur dolorem commodi
+          facilis, asperiores dolores iusto facere inventore iste, harum fugit
+          est! Asperiores.
+        </p>
+      </div>
+    </div>
+
+    <div class="fixedbox box5"></div>
   </body>
 </html>

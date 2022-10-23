@@ -1,0 +1,67 @@
+<!-- create website with video playing in the background
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Video Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /*
+        this boxzing property helps to add 
+        the padding and margin within the boxsize 
+        */
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .hero {
+        width: 100%;
+        /* vh css uits 
+         */
+
+        /* vh veiwport height  */
+        height: 100vh;
+        background-image: linear-gradient(
+          rgba(12, 3, 51, 0.3),
+          rgba(12, 3, 51, 0.3)
+        );
+        padding: 0 5%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav .logo {
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="/praticehtml/youtube.png" alt="youtube logo" class="logo" />
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us </a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
