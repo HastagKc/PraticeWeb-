@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar Design</title>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/img/cartoonWallpaper.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .nav
+        {
+            width: 100%;
+            height: 60px;
+            background-color:#137195;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        strong
+        {
+            margin: 0 5px;
+            font-size:60px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: inline-block;
+            
+        }
+        strong:hover
+        {
+            color: #74d6fd;
+        }
+        .navlinks ul
+        {
+            display: flex;
+        }
+        .navlinks ul li 
+        {  
+            /* background-color: red; */
+            margin: 10px;
+            padding: 5px 0px;
+            display: inline-block;
+            list-style: none;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .navlinks ul li a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /*  making animation in navlinks  */
+        .navlinks ul li::after
+        {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background:#f81e0f;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        .navlinks ul li:hover::after
+        {
+            width: 100%;
+        }
+        .navlinks ul li a:hover{
+            color: #f81e0f;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="nav">
+            <div class="logo">
+            <strong>Navigation Bar</strong>
+            </div>
+            <div class="navlinks">
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">About us</a></li>
+                        <li> <a href="#">Service</a></li>
+                        <li> <a href="#">Contact us</a> </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
