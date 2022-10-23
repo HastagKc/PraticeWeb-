@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List and Tables in Html</title>
+
+    <style>
+      table {
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ul refers to the unordered list  -->
+    <ul type="circle">
+      <li>Pencils</li>
+      <ul style="list-style-type: square">
+        <li>Red</li>
+        <li>Blue</li>
+      </ul>
+      <li>Books</li>
+      <li>Copy</li>
+    </ul>
+
+    <!-- ordered list in html  -->
+
+    <ol type="1">
+      <li>Books</li>
+      <ul style="list-style-type: disc" ;>
+        <li>Grade1</li>
+        <li>Grade2</li>
+      </ul>
+      <li>Pen</li>
+      <li>Paper</li>
+      <li>Note book</li>
+    </ol>
+
+    <!-- creating the table by 
+    usng the html tags -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>LastName</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ram</td>
+          <td>Chaudhary</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Rohit</td>
+          <td>Chand</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Hari</td>
+          <td>Lal Yadav</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- about rowspan and col sapn in html tags  -->
+    <!-- rowspan -->
+    <!-- colspan -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="2">
+      <tr>
+        <td rowspan="2" colspan="3"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+    </table>
+  </body>
+</html>
