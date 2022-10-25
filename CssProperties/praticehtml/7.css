@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.background {
+  /* overflow: hidden; */
+  overflow: auto;
+  width: 500px;
+  height: 300px;
+  text-align: justify;
+
+  /* text-align: center; */
+  /* backgorund property  */
+  /* background-color: aqua;
+  background-image: url("youtube.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-position: top right; */
+  /* background-position: center;
+  /* background-attachment: scroll; */
+  /* background-attachment: fixed; */
+
+  /* short hand property  */
+  background: rgb(30, 163, 187) url("youtube.png") no-repeat center scroll;
+}
