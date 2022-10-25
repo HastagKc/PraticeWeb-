@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+* {
+  box-sizing: border-box;
+}
+.box {
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+}
+.one {
+  /* margin: 10px; */
+  /* top rtlt  bottom*/
+  /* margin: 10px 50px 50px; */
+  /* topbottom rightleft */
+  margin: 20px 40px;
+
+  background-color: aqua;
+}
+.two {
+  /* text-align: justify; */
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(75, 177, 245);
+  color: rgb(16, 8, 128);
+  margin: 20px;
+  /* color: white; */
+}
+.three {
+  background-color: red;
+}
