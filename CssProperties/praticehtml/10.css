@@ -1,0 +1,52 @@
+.achor {
+  width: 400px;
+  height: 250px;
+  box-sizing: border-box;
+  background-color: burlywood;
+  border: 2px solid blue;
+  margin: auto;
+  text-align: justify;
+  padding: 10px;
+}
+
+.achor a {
+  margin-top: 5px;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.achor a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  /* color: white; */
+  background-color: white;
+  transition: 0.75s;
+  overflow: hidden;
+}
+.achor a:hover::after {
+  width: 100%;
+  background-color: white;
+}
+.achor a:hover {
+  color: #ff0000;
+}
+.achor a:visited {
+  color: #008800;
+}
+
+button {
+  margin-left: 5px;
+  color: blue;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  color: red;
+}
