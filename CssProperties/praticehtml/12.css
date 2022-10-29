@@ -1,0 +1,49 @@
+h2 {
+  /* display: none; */
+  /* this will hide content  */
+}
+/* 
+ul li {
+  border: 2px solid red;
+  padding: 10px;
+  display: inline;
+} */
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  /* color: black; */
+  list-style: none;
+  border: 2px solid green;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: rgba(23, 23, 95, 0.521);
+  border-radius: 10px;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+.color {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+}
+
+.one {
+  background-color: red;
+}
+.two {
+  background-color: green;
+}
+.three {
+  background-color: blue;
+}

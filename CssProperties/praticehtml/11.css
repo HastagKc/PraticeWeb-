@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inline {
+  width: 100%;
+  height: 100px;
+}
+.inline ul li {
+  display: inline;
+  background-color: red;
+  /* 
+  top and bottom margin doesnot work and width and also can't able to provide
+  */
+
+  /* margin: 20px; */
+  padding: 20px;
+  width: 200px;
+}
+.block ul li {
+  width: 200px;
+}
