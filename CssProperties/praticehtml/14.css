@@ -2,6 +2,8 @@
   width: 200px;
   height: 200px;
   background-color: burlywood;
+  margin-bottom: 20px;
+
   /* transition-property: width, height, background-color;
   transition-duration: 2s, 3s, 4s; */
 
@@ -21,4 +23,23 @@
   width: 300px;
   height: 400px;
   background-color: green;
+}
+input {
+  width: 100px;
+  transition: all 1s linear 0.2s;
+}
+input:focus {
+  width: 200px;
+  /* border-radius: 50%; */
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  transition: all 1s linear 0.3s;
+}
+.circle:hover {
+  border-radius: 50%;
+  background-color: hotpink;
 }
