@@ -1,0 +1,45 @@
+#box1 {
+  width: 200px;
+  height: 200px;
+  background-color: burlywood;
+  margin-bottom: 20px;
+
+  /* transition-property: width, height, background-color;
+  transition-duration: 2s, 3s, 4s; */
+
+  /* transition: all 2s; */
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: steps(4, start); */
+  /* transition-timing-function: steps(4, end); */
+  /* transition-timing-function: cubic-bezier(1, 0.82, 1, 0.5); */
+
+  transition: all 3s ease-in-out 0.5s;
+}
+#box1:hover {
+  width: 300px;
+  height: 400px;
+  background-color: green;
+}
+input {
+  width: 100px;
+  transition: all 1s linear 0.2s;
+}
+input:focus {
+  width: 200px;
+  /* border-radius: 50%; */
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  transition: all 1s linear 0.3s;
+}
+.circle:hover {
+  border-radius: 50%;
+  background-color: hotpink;
+}
