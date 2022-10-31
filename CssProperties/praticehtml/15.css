@@ -1,0 +1,26 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  transition: all 2s;
+}
+.box:hover {
+  /* rotate  */
+  /* transform: rotate(45deg); */
+  /* transform: rotateX(60deg); */
+  /* transform: rotateY(90deg); */
+  /* transform: rotate(55deg, 90deg); */
+
+  /* scale */
+  /* help to make x-times bigger and smaller */
+  /* transform: scale(2); */
+  /* transform: scaleX(1.5); */
+  /* transform: scaleY(1.5); */
+  /* transform: scaleZ(2); */
+  /* transform: scale(1.5, 2); */
+
+  /* translate  */
+  /* transform: translate(522px, 850px); */
+  /* transform: translateX(500px); */
+  transform: translateY(500px);
+}
