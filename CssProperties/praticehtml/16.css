@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* z-index value 
+
+The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+
+- but it does not work in static position element which is provided by default 
+
+Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top. 
+
+
+*/
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 10px 20px;
+}
+
+.box1 {
+  background-color: gray;
+  width: 80px;
+  height: 80px;
+  /*
+   it have more z index than the red box but 
+   it is a child of green box so z index property 
+  get inherit form parent to child
+   */
+  z-index: 200;
+}
+#red {
+  background-color: red;
+
+  /* z index only work when position is define  */
+  position: relative;
+  z-index: 100;
+}
+#green {
+  background-color: green;
+  /* 
+  position relative means relativee to its original position 
+   */
+  position: relative;
+  top: -100px;
+  left: 20px;
+}
+
+#blue {
+  background-color: blue;
+}
+
+/* visibility and display none property in css
+ */
+
+/* 
+visibility property only hide div or an object 
+ but occupy the hidden space
+ */
+#orange {
+  /* it hide object but occupy its space */
+  background-color: orange;
+  visibility: hidden;
+}
+#yellow {
+  /* 
+  display hide space as well as it occupy space
+   */
+  background-color: yellow;
+  display: none;
+}
