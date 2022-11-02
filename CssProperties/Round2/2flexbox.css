@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: pink;
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  width: 90px;
+  height: 90px;
+  background-color: blue;
+}
