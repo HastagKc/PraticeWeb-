@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  background-color: burlywood;
+  /* flex property is use in the parent div to 
+    put child div in same line or horizontal line 
+  */
+  display: flex;
+  /* by defalut flex direction is row i.e horizontal */
+  flex-direction: row-reverse;
+}
+
+section div {
+  padding: 20px;
+  border: 2px solid black;
+}
+
+/*  by giving the value to the flex we
+ and grow and shrink the 
+div 
+ */
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+.flex3 {
+  flex: 1;
+}
