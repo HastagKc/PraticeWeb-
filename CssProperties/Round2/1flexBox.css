@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+section {
+  width: 100%;
+  background-color: burlywood;
+  /* flex property is use in the parent div to 
+    put child div in same line or horizontal line 
+  */
+  display: flex;
+  /* by defalut flex direction is row i.e horizontal */
+  /* flex-direction: row-reverse;
+   */
+  /* flex-direction: column; */
+
+  /* justify-content is a parent property */
+  /* justify-content: space-around; */
+  justify-content: space-between;
+
+  /* align-items: flex-start; */
+  align-items: center;
+}
+
+section div {
+  /* width: 30%; */
+  /* the alternative of width is flexbasis  which 
+  provide responsiveness than width 
+  */
+  flex-basis: 30%;
+
+  padding: 20px;
+  border: 2px solid black;
+}
+
+/*  by giving the value to the flex we
+ and grow and shrink the 
+div 
+ */
+.flex1 {
+  /* flex: 1; */
+  background-color: red;
+}
+
+.flex2 {
+  /* flex: 2; */
+  background-color: green;
+}
+.flex3 {
+  /* flex: 1; */
+  background-color: blue;
+}
+
+@media (max-width: 900px) {
+  section {
+    /* display: flex; */
+    flex-direction: column;
+  }
+  section div {
+    width: 100%;
+  }
+}
