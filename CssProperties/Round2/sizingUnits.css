@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  font-size: 20px;
+}
+
+#idOne {
+  /* 2em means 2 * parent font size  */
+  font-size: 2em;
+}
