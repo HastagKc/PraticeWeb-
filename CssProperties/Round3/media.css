@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: none;
+  font-size: 10px;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+    background-color: red;
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 400px) and (min-width: 200px) {
+  .container {
+    background-color: aqua;
+    display: block;
+    font-size: 2em;
+  }
+}
