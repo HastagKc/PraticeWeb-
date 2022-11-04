@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* some media width according to device is 
+mobile - max width 688px
+- tablets - max width 992ps 
+- pc - 1312 px 
+- for ultra width pc and laptops min width 1312px 
+
+*/
 .container {
   display: none;
   font-size: 10px;
