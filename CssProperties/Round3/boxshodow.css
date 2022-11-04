@@ -16,4 +16,9 @@
   width: 200px;
   height: 200px;
   background-color: red;
+  /* box-shodow h-offset v-offset blur spread color */
+  box-shadow: 10px 10px 20px 5px #888888;
+
+  /* multiple  */
+  /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */
 }
