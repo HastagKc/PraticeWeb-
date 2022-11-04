@@ -4,12 +4,27 @@
   box-sizing: border-box;
 }
 
+html {
+  /* rem takes reference form the root element  */
+  font-size: 10px;
+}
 .container {
   text-align: center;
   font-size: 20px;
+  height: 100vh;
+  background-color: aqua;
+  border: 2px solid red;
 }
 
 #idOne {
   /* 2em means 2 * parent font size  */
-  font-size: 2em;
+  /* if font size is not provide to the parent 
+  it takes size form brower font or from html tag
+   */
+  font-size: 3em;
+}
+#idTwo {
+  /* rem multiple by root element i.e is html tag  */
+
+  font-size: 3rem;
 }
