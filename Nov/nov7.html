@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom variable and animation</title>
+
+    <style>
+      /*       
+       A good way to use CSS variables is when it 
+      comes to the colors of your design. Instead of copy 
+      and paste the same colors over and over again, 
+      you can place them in variables. */
+
+      :root {
+        --blue: #30336b;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        /* use of var function  */
+        background-color: var(--blue);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container"></div>
+  </body>
 </html>
