@@ -7,33 +7,73 @@
     <title>Max and min width</title>
 
     <style>
-      .box {
-        height: 200px;
-        max-width: calc(33%);
-        border: 2px solid red;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-      .boxone {
+      .parent {
+        display: flex;
+      }
+      .box {
+        margin: 10px;
+        padding: 20px;
         height: 200px;
-        min-width: 300px;
-        border: 2px solid red;
+        width: calc(46%);
+      }
+      .one {
+        background-color: aqua;
+      }
+      .two {
+        background-color: green;
+      }
+
+      @media (max-width: 640px) {
+        .parent {
+          display: block;
+        }
+        .one {
+          background-color: red;
+          width: 100%;
+        }
+        .two {
+          background-color: yellow;
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 641px) {
+        .parent {
+          background-color: blue;
+        }
+        .one {
+          width: 70%;
+        }
+        .two {
+          width: 25%;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="box">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab eius eaque
-      repellat iste nisi laboriosam veritatis ex sequi tempore provident, optio
-      quasi placeat minus pariatur sed repellendus deleniti nemo. Lorem ipsum
-      dolor, sit amet consectetur adipisicing elit. Quos, dolorem. Natus, fugiat
-      sunt? Tempora est illo quas laboriosam facere veritatis in assumenda eos
-      sapiente et accusamus beatae, voluptates sed, eligendi vel animi odit quod
-      tempore eum fuga obcaecati fugiat. Placeat maiores sequi eos minus non ut
-      illo suscipit, reiciendis, quia voluptatibus cum blanditiis excepturi
-    </div>
-    <div class="boxone">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eum
-      odio et, vel minus obcaecati possimus, dolores cum ipsam, esse quidem quas
-      reiciendis sunt dolorem dolore cumque! Accusantium, laborum ullam?
+    <div class="parent">
+      <div class="box one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab eius
+        eaque repellat iste nisi laboriosam veritatis ex sequi tempore
+        provident, optio quasi placeat minus pariatur sed repellendus deleniti
+        nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
+        dolorem. Natus, fugiat sunt? Tempora est illo quas laboriosam facere
+        veritatis in assumenda eos sapiente et accusamus beatae, voluptates sed,
+        eligendi vel animi odit quod tempore eum fuga obcaecati fugiat. Placeat
+        maiores sequi eos minus non ut illo suscipit, reiciendis, quia
+        voluptatibus cum blanditiis excepturi
+      </div>
+      <div class="box two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        eum odio et, vel minus obcaecati possimus, dolores cum ipsam, esse
+        quidem quas reiciendis sunt dolorem dolore cumque! Accusantium, laborum
+        ullam?
+      </div>
     </div>
   </body>
 </html>
