@@ -9,20 +9,45 @@
       /* all about animation in css */
 
       .container {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
         background-color: blue;
         animation-name: animation1;
         animation-duration: 5s;
+        animation-delay: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        /* animation-fill-mode: forwards; */
+        animation-fill-mode: both;
+        position: relative;
       }
 
       @keyframes animation1 {
         form {
+          top: 0;
           background-color: blue;
         }
         to {
+          top: 400px;
           background-color: red;
         }
+        /* 
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: gray;
+        }
+        50% {
+          background-color: orange;
+        }
+        75% {
+          background-color: pink;
+        }
+        100% {
+          background-color: aqua;
+        } */
       }
     </style>
   </head>
