@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Project using Grid in css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        background-color: burlywood;
+        grid-template-areas: "logo navbar navbar navbar" "aside section section section " "footer footer footer footer";
+      }
+      .Header {
+        background-color: green;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #navbar ul {
+        display: flex;
+        justify-content: end;
+        /* align-items: flex-end; */
+      }
+      #navbar ul li {
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgba(240, 236, 21, 0.445);
+        border-radius: 5px;
+      }
+      #navbar ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      #navbar ul li:hover {
+        background-color: aqua;
+      }
+      #navbar ul li a:hover {
+        color: red;
+      }
+
+      .asideSection {
+        padding: 20px;
+        text-align: justify;
+        line-height: 25px;
+        word-spacing: 5px;
+        background-color: aliceblue;
+        font-size: 20px;
+        height: 100vh;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #section {
+        grid-area: section;
+        background-color: aqua;
+      }
+      footer {
+        grid-area: footer;
+        padding: 30px;
+        font-size: 30px;
+        background-color: black;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo Header"><h2>Cakelicious Bakery</h2></div>
+      <div class="Header" id="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Servies</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div id="aside" class="asideSection">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+        velit reiciendis error itaque. Ut totam commodi autem repellendus
+        eveniet facilis blanditiis pariatur odio praesentium nostrum, quisquam
+        aut impedit itaque nobis?
+      </div>
+      <div id="section" class="asideSection">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magnam
+        quidem, autem cupiditate architecto est ipsa consequuntur dignissimos
+        quo iste eum quae? Iure in nihil cumque eaque autem blanditiis natus
+        dignissimos, est, accusamus cupiditate ipsa. Quibusdam, veniam eum,
+        exercitationem eaque incidunt ullam autem consectetur eius eveniet error
+        ratione et consequatur.
+      </div>
+      <footer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quisquam
+        nobis! Ex optio sit commodi sint delectus quam ea enim dolor, qui,
+        accusamus numquam! Autem consequuntur ad sunt, doloribus laudantium
+        corrupti consectetur repudiandae, accusantium perferendis officiis qui
+        voluptatibus quas incidunt.
+      </footer>
+    </div>
+  </body>
+</html>
