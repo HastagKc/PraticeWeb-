@@ -1,9 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
 .achor {
   width: 400px;
   height: 250px;
   box-sizing: border-box;
   background-color: burlywood;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  border-radius: 20px;
   margin: auto;
   text-align: justify;
   padding: 10px;
