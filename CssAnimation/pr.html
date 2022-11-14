@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(55, 77, 109);
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      span {
+        font-size: 140px;
+      }
+      #one {
+        animation: animation 2s;
+        animation-delay: 2s;
+
+        /* animation-iteration-count: infinite; */
+      }
+      #two {
+        animation: animation 2s;
+        animation-delay: 3s;
+        /* animation-iteration-count: infinite; */
+      }
+      #three {
+        animation: animation 2s;
+        animation-delay: 4s;
+        /* animation-iteration-count: infinite; */
+      }
+      #four {
+        animation: animation 2s;
+        animation-delay: 5s;
+        /* animation-iteration-count: infinite; */
+      }
+      #five {
+        animation: animation 2s;
+        animation-delay: 6s;
+        /* animation-iteration-count: infinite; */
+      }
+      @keyframes animation {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <span id="one">.</span>
+      <span id="two">.</span>
+      <span id="three">.</span>
+      <span id="four">.</span>
+      <span id="five">.</span>
+    </div>
+  </body>
+</html>

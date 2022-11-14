@@ -27,24 +27,42 @@
       }
       .boy {
         color: #eec549;
+        animation: delay 5s forwards;
+        /* font-style: italic; */
       }
       span {
+        /* margin: 0 12px; */
         color: slategray;
 
-        animation-name: animation;
-        animation-duration: 3s;
+        /* animation-name: animation; */
+        /* animation-duration: 3s; */
         /* animaiton fill mode will set property of 
         the css as per the last keyframe value i.e 100% 
         in this cas */
-        animation-fill-mode: forwards;
+        /* animation-fill-mode: forwards; */
         /* animation-iteration-count: infinite; */
+
+        animation: animation1 3s forwards;
+        /* margin: 0 2px; */
       }
-      @keyframes animation {
-        0% {
-          margin-left: 10px;
+
+      @keyframes animation1 {
+        0%,
+        25% {
+          margin: 0 12px;
         }
         100% {
-          margin-left: 5px;
+          margin: 0 2px;
+        }
+      }
+
+      @keyframes delay {
+        0%,
+        30% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
         }
       }
     </style>
