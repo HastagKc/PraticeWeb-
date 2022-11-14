@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+      }
+      body {
+        background-color: black;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 62px;
+      }
+      .boy {
+        color: #eec549;
+      }
+      span {
+        color: slategray;
+
+        animation-name: animation;
+        animation-duration: 3s;
+        /* animaiton fill mode will set property of the css as per the last keyframe value i.e 100% 
+        in this cas */
+        animation-fill-mode: forwards;
+        /* animation-iteration-count: infinite; */
+      }
+      @keyframes animation {
+        0% {
+          margin-left: 10px;
+        }
+        100% {
+          margin-left: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span>T</span>
+      <span>h</span>
+      <span>e</span>
+      <span>T</span>
+      <span>e</span>
+      <span>c</span>
+      <span>h</span>
+      <span class="boy">B</span>
+      <span class="boy">o</span>
+      <span class="boy">y</span>
+    </div>
+  </body>
+</html>
