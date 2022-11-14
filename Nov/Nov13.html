@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid pratice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .shape {
+        display: grid;
+        place-items: center;
+
+        /* width: 200px;
+        height: 200px; */
+        /* background-color: blue; */
+        animation-name: animation1;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+
+        /* animation-iteration-count: infinite; */
+        /* animation-direction: reverse; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: both; */
+        /* position: relative; */
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        border-top: 200px solid red;
+        border-radius: 100%;
+        /* border-bottom: 200px solid red; */
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        animation: skr 2s linear infinite;
+      }
+
+      @keyframes skr {
+      }
+
+      @keyframes animation1 {
+        0% {
+          border-top: 200px solid transparent;
+          border-bottom: 200px solid transparent;
+          /* border-left: 200px solid transparent; */
+          border-right: 200px solid blue;
+        }
+        25% {
+          /* border-top: 200px solid red; */
+          border-bottom: 200px solid red;
+          border-left: 200px solid transparent;
+          border-right: 200px solid transparent;
+        }
+        50% {
+          /* border-top: 200px solid red; */
+          border-bottom: 200px solid transparent;
+          border-left: 200px solid green;
+          border-right: 200px solid transparent;
+        }
+        75% {
+          /* border-top: 200px solid red; */
+          border-bottom: 200px solid red;
+          border-left: 200px solid transparent;
+          border-right: 200px solid transparent;
+        }
+        100% {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape">
+      <div class="triangle"></div>
+    </div>
+  </body>
+</html>
