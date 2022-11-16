@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word animation</title>
+    <style>
+      .center {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        /* background-color: aqua; */
+        height: 100px;
+      }
+      .container:hover {
+        cursor: pointer;
+      }
+      p {
+        letter-spacing: 5px;
+        word-spacing: 15px;
+        margin-right: 20px;
+      }
+      p:nth-child(2) {
+        opacity: 0;
+        color: yellow;
+      }
+      p:nth-child(2):hover {
+        opacity: 1;
+      }
+
+      .letter:hover {
+        animation: animation 2s ease-in-out forwards;
+      }
+      span {
+        font-size: 52px;
+      }
+
+      @keyframes animation {
+        0% {
+          /* margin-right: 500vw; */
+
+          letter-spacing: 10px;
+        }
+        50% {
+          color: pink;
+          letter-spacing: 100px;
+        }
+        100% {
+          color: red;
+          letter-spacing: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="container">
+        <p>
+          <span>Don't</span>
+          <span>Touch</span>
+        </p>
+        <p>
+          <span class="letter">IDiOT</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

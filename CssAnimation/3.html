@@ -25,13 +25,13 @@
         height: 100vh;
         font-size: 62px;
       }
+      .container {
+        display: flex;
+      }
       .boy {
         color: #eec549;
-        animation: delay 5s forwards;
-        /* font-style: italic; */
       }
       span {
-        /* margin: 0 12px; */
         color: slategray;
 
         /* animation-name: animation; */
@@ -42,27 +42,18 @@
         /* animation-fill-mode: forwards; */
         /* animation-iteration-count: infinite; */
 
-        animation: animation1 3s forwards;
-        /* margin: 0 2px; */
+        animation: animation 3s ease-in-out forwards;
       }
 
-      @keyframes animation1 {
-        0%,
-        25% {
-          margin: 0 12px;
+      @keyframes animation {
+        0% {
+          letter-spacing: 10px;
+        }
+        50% {
+          letter-spacing: 100px;
         }
         100% {
-          margin: 0 2px;
-        }
-      }
-
-      @keyframes delay {
-        0%,
-        30% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
+          letter-spacing: 20px;
         }
       }
     </style>
