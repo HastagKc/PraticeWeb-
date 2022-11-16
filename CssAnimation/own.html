@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+      }
+      body {
+        background-color: black;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 62px;
+      }
+      .boy {
+        color: #eec549;
+      }
+      span {
+        color: slategray;
+
+        /* animation-name: animation; */
+        /* animation-duration: 3s; */
+        /* animaiton fill mode will set property of 
+        the css as per the last keyframe value i.e 100% 
+        in this cas */
+        /* animation-fill-mode: forwards; */
+        /* animation-iteration-count: infinite; */
+      }
+
+      span:hover {
+        cursor: pointer;
+        color: red;
+        /* font-style: italic; */
+        animation: animation 1s backwards;
+      }
+      @keyframes animation {
+        0% {
+          letter-spacing: 10px;
+        }
+        50% {
+          letter-spacing: 80px;
+        }
+        100% {
+          letter-spacing: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- simple text animation -->
+    <div class="container">
+      <span>K</span>
+      <span>s</span>
+      <span>h</span>
+      <span>i</span>
+      <span>T</span>
+      <span>T</span>
+      <span>i</span>
+      <span>z</span>
+    </div>
+  </body>
+</html>
