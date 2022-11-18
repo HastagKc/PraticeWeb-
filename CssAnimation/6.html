@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: o;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        letter-spacing: 20px;
+        font-size: 62px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(9, 61, 61);
+      }
+      .tech {
+        opacity: 0;
+        animation: fade 1s forwards;
+        animation-delay: 0.5s;
+      }
+
+      .boy_wrapper {
+        color: yellow;
+        /* transform: translateX(-350px); */
+        animation: slide_right 2s forwards;
+      }
+      @keyframes slide_right {
+        form {
+          margin-left: 300px;
+        }
+        to {
+          margin-top: 120px;
+          margin-left: -120px;
+        }
+      }
+
+      @keyframes fade {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="tech">T</span>
+      <span class="tech">h</span>
+      <span class="tech">e</span>
+      <span class="tech">T</span>
+      <span class="tech">e</span>
+      <span class="tech">c</span>
+      <span class="tech">H</span>
+      <div class="boy_wrapper">
+        <span class="boy">b</span>
+        <span class="boy">o</span>
+        <span class="boy">Y</span>
+      </div>
+    </div>
+  </body>
+</html>

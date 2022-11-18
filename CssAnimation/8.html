@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: o;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        letter-spacing: 20px;
+        font-size: 62px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(9, 61, 61);
+      }
+
+      span {
+        /* animation: rotatex 2s forwards; */
+        animation: colors 2s infinite;
+        animation-delay: calc(0.2s * var(--i));
+      }
+      @keyframes colors {
+        0% {
+          color: lightgreen;
+        }
+        25% {
+          color: lightslategray;
+        }
+        50% {
+          color: yellow;
+        }
+        75% {
+          color: aqua;
+        }
+        100% {
+          color: bisque;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span style="--i: 1">T</span>
+      <span style="--i: 2">h</span>
+      <span style="--i: 3">e</span>
+      <span style="--i: 4">T</span>
+      <span style="--i: 5">e</span>
+      <span style="--i: 6">c</span>
+      <span style="--i: 7">H</span>
+
+      <span style="--i: 8" class="boy">b</span>
+      <span style="--i: 9" class="boy">o</span>
+      <span style="--i: 10" class="boy">Y</span>
+    </div>
+  </body>
+</html>
