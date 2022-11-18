@@ -38,17 +38,33 @@
       #box1 {
         position: absolute;
         top: 60px;
-        right: 350px;
+        right: 650px;
         border-left: 2px solid rgb(214, 195, 195);
         border-bottom: 2px solid rgb(214, 195, 195);
         z-index: 1;
+        animation: animation 5s forwards;
       }
       #box2 {
         position: absolute;
-        top: 280px;
+        top: 380px;
         right: 200px;
         border-left: 2px solid rgb(214, 195, 195);
         border-bottom: 2px solid rgb(214, 195, 195);
+        animation: animation2 4s forwards;
+      }
+      @keyframes animation {
+        to {
+          position: absolute;
+          top: 60px;
+          right: 350px;
+        }
+      }
+      @keyframes animation2 {
+        to {
+          position: absolute;
+          top: 280px;
+          right: 200px;
+        }
       }
     </style>
   </head>
