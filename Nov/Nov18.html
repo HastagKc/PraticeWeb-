@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        background-color: black;
+      }
+      .element-class {
+        width: 200px;
+        height: 300px;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        color: white;
+      }
+
+      .element-class:before,
+      .element-class:after {
+        content: "";
+        /* display: block; */
+        position: absolute;
+        /* background-color: transparent;
+        pointer-events: none; */
+      }
+
+      .element-class:before {
+        top: 0;
+        left: 0;
+        right: 60%;
+        bottom: 60%;
+        border-top: 4px solid red;
+        border-left: 4px solid red;
+      }
+
+      .element-class:after {
+        top: 80%;
+        left: 60%;
+        right: 0;
+        bottom: 0;
+        border-bottom: 4px solid red;
+        border-right: 4px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="element-class">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere nihil
+      minima excepturi, sunt doloremque ipsum quos non alias. Sed impedit quidem
+      quod necessitatibus libero possimus asperiores ea nam harum consequuntur?
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. At a quod
+      perspiciatis maiores doloribus distinctio, nobis eligendi vero, quibusdam
+      maxime, ad nihil aut. Optio debitis repudiandae dolorem vel aut animi esse
+    </div>
+  </body>
+</html>
