@@ -53,17 +53,40 @@
         animation: animation2 4s forwards;
       }
       @keyframes animation {
-        to {
+        /* to {
+          position: absolute;
+          top: 60px;
+          right: 350px;
+        } */
+
+        0%,
+        100% {
           position: absolute;
           top: 60px;
           right: 350px;
         }
+        50% {
+          position: absolute;
+          top: 60px;
+          right: 250px;
+        }
       }
       @keyframes animation2 {
-        to {
+        /* to {
           position: absolute;
           top: 280px;
           right: 200px;
+        } */
+        0%,
+        100% {
+          position: absolute;
+          top: 280px;
+          right: 200px;
+        }
+        50% {
+          position: absolute;
+          top: 280px;
+          right: 150px;
         }
       }
     </style>
