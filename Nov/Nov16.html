@@ -5,6 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        /* display: inline; */
+        /* justify-content: center;
+        align-items: center; */
+        /* background-image: linear-gradient(45deg, #ff3347 25%, #cc0014); */
+        /* background-image: radial-gradient(
+             farthest-side at 100px 100px,
+             red,
+             green
+           ); */
+
+        background: rgb(223, 20, 20);
+        background-image: linear-gradient(125deg, #d64c7f 55%, #ee4758 50%);
+        position: relative;
+      }
+      .box {
+        width: 400px;
+        height: 300px;
+        background-color: #d64c7f;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      }
+      #box1 {
+        position: absolute;
+        top: 20px;
+        right: 350px;
+      }
+      #box2 {
+        position: absolute;
+        top: 280px;
+        right: 200px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+    </div>
+  </body>
 </html>
