@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: o;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(9, 61, 61);
+      }
+      span {
+        font-size: 45px;
+        color: white;
+        animation: animation 2s ease-in-out forwards;
+      }
+
+      span:hover {
+        margin-bottom: 20px;
+        font-size: 50px;
+        color: red;
+      }
+      .boy {
+        color: yellow;
+      }
+      @keyframes animation {
+        0% {
+          letter-spacing: 10px;
+        }
+        50% {
+          letter-spacing: 100px;
+        }
+        100% {
+          letter-spacing: 50px;
+          transform: skewX(-20deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span>T</span>
+      <span>h</span>
+      <span>e</span>
+      <span>T</span>
+      <span>e</span>
+      <span>c</span>
+      <span>H</span>
+      <span class="boy">B</span>
+      <span class="boy">O</span>
+      <span class="boy">Y</span>
+    </div>
+  </body>
+</html>
