@@ -1,6 +1,6 @@
-const classSelect = document.querySelector(".class");
+var classSelect = document.querySelector(".className");
 
-var btn = document.getElementsById("btn1");
+var btn = document.querySelector("#btn1");
 
 btn.addEventListener("click", function () {
   classSelect.textContent = "working properly";
