@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  background-color: #c1c1c1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.flex {
+  /* height: 200px; */
+  width: 100%;
+}
+.one {
+  background-color: red;
+}
+.two {
+  /* flex-shrink: 40; */
+  background-color: blue;
+}
