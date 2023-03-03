@@ -16,6 +16,8 @@
 }
 .one {
   background-color: red;
+  /* flex-shrink: 0; tell not to shrink  */
+  flex-shrink: 2;
 }
 .two {
   /* flex-shrink: 40; */
