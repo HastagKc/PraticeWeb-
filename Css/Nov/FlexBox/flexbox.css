@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  width: 100wv;
+  height: 100vh;
+  background-color: #c1c1c1;
+  display: flex;
+
+  /* main axis and cross axis  */
+  /* justify  content affect main axis when flex flow in row i.e default */
+
+  /* flex-flow: column; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* align items affect vertically i.e cross axis */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* stretch all the element when height is not given  */
+  /* align-items: stretch; */
+  /* flex wrap aviod form the overflow of the flex container */
+  /* flex-wrap: wrap; */
+  align-content: center;
+}
+.flex {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+
+  /* flex-grow: 1; */
+}
+
+.one {
+  background-color: green;
+  order: 3;
+  flex-grow: 2;
+  align-self: flex-end;
+}
+.two {
+  background-color: red;
+  order: 2;
+}
+.three {
+  background-color: blue;
+  order: 1;
+  flex-grow: 2;
+}
+.four {
+  background-color: blueviolet;
+  order: 4;
+}

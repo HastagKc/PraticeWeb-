@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basis</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #c3c3c3;
+      }
+
+      #main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+      .box {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+      }
+      #box1 {
+        background-color: blue;
+      }
+      #box2 {
+        background-color: green;
+      }
+      #box3 {
+        background-color: red;
+      }
+      #box4 {
+        background-color: aqua;
+      }
+      #box5 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The flex-basis property specifies the initial length of a flexible item.
+
+            Note: If the element is not a flexible item, the flex-basis property has no effect. -->
+
+    <div id="main">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+      <div class="box" id="box5"></div>
+    </div>
+  </body>
+</html>
