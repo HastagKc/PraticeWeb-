@@ -1,8 +1,0 @@
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "liveServer.settings.port": 5501,
-  "editor.fontFamily": "'JetBrains Mono','MonoLisa' ,Consolas, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "editor.fontLigatures": true
-}

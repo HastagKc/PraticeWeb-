@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Center the div</title>
     <style>
-      /*1. with the help of the position 
+        /*1. with the help of the position 
 
 
       2. with flex box but haight should be given 
@@ -20,38 +21,42 @@
         place-items: center;
       
       */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      .container {
-        width: 100%;
-        height: 100vh;
-        background-color: burlywood;
-        display: grid;
-        place-items: center;
-        /* display: flex;
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: burlywood;
+            display: grid;
+            place-items: center;
+            /* display: flex;
         justify-content: center;
         align-items: center; */
-        /* position: relative; */
-      }
-      .child {
-        background-color: blue;
-        width: 500px;
-        height: 500px;
-        /* position: absolute;
+            /* position: relative; */
+        }
+
+        .child {
+            background-color: blue;
+            width: 500px;
+            height: 500px;
+            /* position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); */
-      }
+        }
+
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- centering the div in the css -->
     <div class="container">
-      <div class="child"></div>
+        <div class="child"></div>
     </div>
-  </body>
+</body>
+
 </html>
