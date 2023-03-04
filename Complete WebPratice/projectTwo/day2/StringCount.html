@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day2 learning Js</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <h2>THis is heading Two</h2> -->
+    <!-- <div class="content"> -->
+    <!--  simple string length count project -->
+    <!-- <label for="myInput">Enter your messages :</label> -->
+    <!--  -->
+    <!-- <input type="text" id="myInput" name="myInput" /> -->
+    <!-- <div id="totalnum"> -->
+    <!-- <p class="totalNum">Total Num:</p> -->
+    <!-- <p id="count">200</p> -->
+    <!-- </div> -->
+    <!--  -->
+    <!-- <button onclick="getText()">Get Text</button> -->
+    <!-- </div> -->
+
+    <div class="content">
+      <label for="myInput">Enter your text:</label>
+      <input type="text" id="myInput" name="myInput" oninput="updateCount()" />
+      <button type="submit" onclick="tweetUpdate()">Tweet</button>
+      <p>Remaining Words: <span id="count">200</span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
