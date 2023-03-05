@@ -33,7 +33,11 @@ formEl.addEventListener("submit", function (event) {
   } else {
     score--;
     updateLocalStorage();
-    window.location.reload();
+    inputEl.style.color = "red";
+    // inputEl.style.outlineColor = "red";
+
+    inputEl.style.borderColor = "red";
+    inputEl.style.borderRadius = "10px";
   }
 });
 
