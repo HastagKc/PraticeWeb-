@@ -30,12 +30,15 @@ const colors = [
 ];
 
 // function for changing the background
-function changeTheBackground() {
+// function changeTheBackground() {
+//   const colorIndex = parseInt(Math.random() * colors.length);
+//   boxSelector.style.backgroundColor = colors[colorIndex];
+// }
+
+// Selecting a default color
+boxSelector.style.backgroundColor = "purple";
+// Adding event listener
+btnSelector.addEventListener("click", () => {
   const colorIndex = parseInt(Math.random() * colors.length);
   boxSelector.style.backgroundColor = colors[colorIndex];
-}
-
-// // Selecting a default color
-// boxSelector.style.backgroundColor = "purple";
-// // Adding event listener
-// btnSelector.addEventListener("click", changeTheBackground());
+});
